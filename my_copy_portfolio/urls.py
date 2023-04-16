@@ -22,7 +22,9 @@ from portfolio import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home')
+    path('', views.home, name='home'),
+    path('landing_page/', views.landing_page, name='landing_page'),
+    path('ps5_vs_switch/', views.ps5_vs_switch, name='ps5_vs_switch')
 ]
 
 if settings.DEBUG:

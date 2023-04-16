@@ -1,12 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "{% static 'portfolio.css' %}">
     <title>Document</title>
 </head>
-<body>
-    hello world!
+<body class="body">
+    <div class="flex-cont-a">
+        <div class="flex-cont-b"><h1 class=" backg">WELCOME! TO MY PORTFOILIO!</h1></div>
+        <div class="flex-cont-b">
+            <img class="my-face" src="{% static 'self_pic.jpg' %}" alt="">
+            <h3 class="about-tex">Hi! <br> My name is Marcus Morrow, I am a rising copywriter and I am here to help you in all of your copy writing needs. From <u>LANDING PAGES, OPT-IN PAGES, EMAILS, AND MORE</u>! Take a look at my work below!</h3>
+        </div>
+
+        <div class="flex-cont-b flex-to-row">
+            <img src="https://i.pinimg.com/originals/7a/86/00/7a8600e33a673e16ed6b227029586972.png" alt="">
+            <h3>Check out my opt-in page for guys seeking to build muscle!</h3>
+        </div>
+        <div class="flex-cont-b"><a href="{% url 'landing_page' %}"><h3 class="copy-link">Do yourself a favor and click here to see it!</h3></a></div>
+        
+        <div class="flex-cont-b flex-to-row">
+            <img src="{% static 'ps5_vs_switch_refined.jpg' %}" alt="">
+            <h3>Check out my article to know wither to get a PS5, or a Nintendo Switch!</h3>
+        </div>
+        <div class="flex-cont-b"><a href="{% url 'ps5_vs_switch' %}"><h3 class="copy-link">Do yourself a favor and click here to see it!</h3></a></div>
+    </div>    
+   
 </body>
 </html>

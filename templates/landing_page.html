@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'landing_page_css.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h4 class="logo">GitFit</h4>
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li><i class="fa-brands fa-instagram fa-2xl"></i></li>
+                <li><i class="fa-brands fa-facebook fa-2xl"></i></li>
+                <li><i class="fa-brands fa-twitter fa-2xl"></i></li>
+            </ul>
+        </nav>
+         <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+         </div>
+        <a href="#"><button>contact us!</button></a>
+    </header>
+    <div class="flex-cont-a">
+        <img  src="https://maxedmuscle.com/wp-content/uploads/2017/12/Strong-And-Handsome-Young-Body-89630354.jpg" alt="">
+        <div class="flex-cont-b">
+            <h1>IN CASE YOU FORGOT!</h1>
+            <h2>Its so easy to get caught up in everyday life struggles and forget to take care of our bodys. Well, were're here to remind you: TO GITFIT!</h2>
+            <ul>
+                <li>bigger arms!</li>
+                <li>shredded abs!</li>
+                <li>nice back/chest!</li>
+                <li>built legs!</li>
+            </ul>
+       </div>
+    </div>
+    <div class="signup">
+        <h1>Claim your dream body this second!</h1>
+        <h1>sign up now!</h1>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">  <button>Submit</button>
+
+    </div>
+    <script src="{% static 'landing_page_js.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(202, 202, 202);
+}
+
+@keyframes flash {
+    from {color: white;}
+  to {color: black;}
+}
+
+
+.backg{
+    width: 100%;
+    color: white;
+    background-color: gold;
+    text-align: center;
+    animation-name: flash;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-image: linear-gradient(to right,rgb(247, 247, 132),rgb(189, 86, 189), rgb(247, 247, 132));
+    margin: 0 0 0% 0;
+    padding: 1% 0% 1% 0%;
+}
+
+.flex-cont-a{
+    margin:2% 2% 2% 2%;
+    background-image: linear-gradient(to right,rgb(247, 247, 132),rgb(189, 86, 189), rgb(247, 247, 132));
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.flex-cont-b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247, 247, 132);
+    margin: 0%;
+    padding: 0%;
+}
+.my-face{
+    max-width: 20%;
+    max-height: 20%;
+    border-radius: 50%;
+    
+    padding: 2% 40% 2% 40%;
+    
+}
+.about-tex{
+    text-align: center;
+    font-size: 4vw;
+    margin:  0% 0 0 0;
+    padding: 0;
+    max-width: 75%;
+}
+.flex-to-row{
+    flex-direction: row;
+    margin-top: 5%;
+}
+.flex-to-row img{
+    width: 50%;
+    padding: 0 0 0 0;
+    margin: 0;
+    
+    
+}
+.flex-to-row h3{
+  
+    text-align: center;
+    width: 50%;
+    font-size: 5vw;
+    margin: 0 0 0 0;
+    padding: 0% 0 0% 0;
+}
+
+.copy-link{
+    color: white;
+ 
+    text-align: center;
+    animation-name: flash;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+    margin: 0 0 0% 0;
+    padding: 1% 0% 1% 0%;
+    font-weight: bold;
+    
+}

@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right,rgb(83, 83, 83),rgb(26, 26, 30),rgb(83, 83, 83));;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-image: linear-gradient(rgb(131, 131, 131),rgb(26,26,30));
+    box-shadow: 2px 2px 5px 5px black;
+}
+
+.navbar i {
+    text-decoration: none;
+    transition: 0.3s ease-in;
+    color: gold;
+}
+
+.navbar i:hover{
+    transition: 0.3s ease-out;
+    color: white;
+}
+
+.navbar-links li{
+    display: inline;
+    padding:0 20px
+}
+
+.logo{
+    font-size: 3rem;
+    color: gold;
+    font-weight: bold;
+    padding: 0 20px;
+}
+button{
+    background-color: gold;
+    border-radius: 50px;
+    border: none;
+    padding: 9px 20px;
+    margin: 0 100px 0 0;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: all 0.3s ease-out;
+    background-color: white;
+}
+
+.flex-cont-a{
+    display: flex;
+    justify-content: left;
+}
+img{
+    width: 50%;
+    height: auto;
+    box-shadow: 1px 2px 10px whitesmoke;
+}
+
+.flex-cont-b{
+    display: flex;
+    flex-direction:column;
+    background-image: linear-gradient(to right,rgb(26, 26, 30),rgb(83, 83, 83));
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+.flex-cont-b h1{
+    margin: 50px 0 0px 50px;
+    padding: 0;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    color: gold;
+}
+.flex-cont-b ul{
+    margin: 40px 0 0 100px;
+}
+.flex-cont-b ul li{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: gold;
+}
+
+.flex-cont-b h2{
+    width: 500px;
+    padding: 0 10px 0 10px;
+    margin: 20px 0 0 50px;
+    text-align: center;
+    color: gold;
+    
+}
+
+.signup button:hover{
+    background-color: gold;
+    animation-name: none;
+}
+
+@keyframes flash {
+    from {background-color: gold;}
+  to {background-color: red;}
+}
+.signup button{
+    animation-name: flash;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.signup{
+    text-align: center;
+    color: gold;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+
+}
+.bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+@media(max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .navbar.active{
+        left: 0%;
+    }
+
+    .flex-cont-a{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .flex-cont-a img{
+          width: 100%;
+    }
+    .flex-cont-b{
+        width: 100%;
+    }
+   
+}

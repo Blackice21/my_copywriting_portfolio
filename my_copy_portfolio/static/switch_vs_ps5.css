@@ -1,0 +1,135 @@
+body{
+    background-color: beige;
+}
+
+.page{
+    background-color: rgb(201, 201, 180);
+    box-shadow: 5px 5px 10px 10px rgb(63, 63, 63);
+    padding: 100px 100px 100px 100px;
+    margin: 50px 50px 0 50px;
+}
+
+.main-title{
+    font-size: 8rem;
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+
+.flex-box-a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.flex-box-b{
+    display: flex;
+    justify-content: center;
+}
+.flex-box-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.first-title{
+    font-size: 2rem;
+}
+.flex-box-c h1{
+    text-align: center;
+    font-size: 4rem;
+    
+}
+.date{
+    text-align: center; 
+
+}
+.switch-im{
+    width: 30%;
+    height: 15%;
+}
+.ps5-im{
+   width: 30%;
+   height: 18%;
+}
+.sec-title{
+    text-align: center;
+}
+.sec-1-text{
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 10rem 0 10rem;
+}
+.flex-d-img{
+    display: flex;
+    justify-content: center;
+}
+.mario-kart{
+        width: 500px;
+        height: 300px;
+        margin-right: 5px;
+}
+.ssbu{
+    width: 530px;
+    height: 300px;
+    margin-left: 5px;
+}
+@media screen and (max-width: 800px) {
+    .first-title {
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .flex-box-b{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .switch-im{
+        width: 300px;
+        height: 150px;
+    }
+    .ps5-im{
+        width: 300px;
+        height: 200px;
+     }
+     .flex-box-c h1{
+        font-size: 3rem;
+     }
+     .sec-1-text{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-size: 1.5rem;
+       
+    
+    }
+    .mario-kart{
+        width: 400px;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+}
+.ssbu{
+    width: 400px;
+    height: 300px;
+    margin: 8px 0 8px 0px;
+    padding: 0;
+}
+.flex-d-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page{
+    padding: 0 20px 0 20px;
+    margin: 0 10px 0 10px;
+    box-shadow: 2px 2px 5px 5px rgb(63, 63, 63);
+}
+.main-title{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+}
