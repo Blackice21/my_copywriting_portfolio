@@ -27,6 +27,4 @@ urlpatterns = [
     path('ps5_vs_switch/', views.ps5_vs_switch, name='ps5_vs_switch')
 ]
 
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
