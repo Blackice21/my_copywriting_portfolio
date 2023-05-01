@@ -12,7 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     background-image: linear-gradient(rgb(131, 131, 131),rgb(26,26,30));
     box-shadow: 2px 2px 5px 5px black;
 }
@@ -170,9 +170,45 @@ img{
     }
     .flex-cont-a img{
           width: 100%;
+          margin: 0;
+          padding: 0;
     }
+   
     .flex-cont-b{
         width: 100%;
     }
+    .flex-cont-b h1{
+        margin: 0;
+        padding: 0 20px 0 20px;
+        font-size: 7vw;
+    }
+    .flex-cont-b h2{
+        margin: 40px 0 0 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+    .flex-cont-b ul{
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0;
+        text-align: center;
+
+    }
+    .flex-cont-b ul li{
+        font-size: 5vw;
+        text-decoration:underline
+      
+    }
+    .signup{
+       padding: 0 0px 0 0px;
+       font-size: 3vw;
+    }
+    .signup h1{
+        padding: 0 20px 0 20px;
+        font-size: 5vw;
+    }
+   
    
 }
