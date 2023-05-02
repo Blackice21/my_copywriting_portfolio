@@ -105,14 +105,14 @@ body{
     
     }
     .mario-kart{
-        width: 400px;
-        height: 300px;
+        width: 60vw;
+        height: auto;
         margin: 0;
         padding: 0;
 }
 .ssbu{
-    width: 400px;
-    height: 300px;
+    width: 60vw;
+    height: auto;
     margin: 8px 0 8px 0px;
     padding: 0;
 }

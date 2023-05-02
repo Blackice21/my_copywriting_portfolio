@@ -86,7 +86,7 @@ img{
 .flex-cont-b ul li{
     font-size: 3rem;
     text-transform: uppercase;
-    color: gold;
+    color: red;
 }
 
 .flex-cont-b h2{
@@ -113,12 +113,23 @@ img{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    width: 10%;
+    transform: translateX(50%);
+    margin-top: 10px;
 }
 .signup{
     text-align: center;
     color: gold;
     padding-bottom: 1%;
     padding-top: 1%;
+}
+
+.email input{
+    width: 20%;
+    margin-top: 10px;
+}
+.email label {
+    width: 50%;
 }
 
 .hamburger{
@@ -135,6 +146,7 @@ img{
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
     }
+
 
 @media(max-width: 768px){
     .hamburger{
@@ -179,8 +191,9 @@ img{
     }
     .flex-cont-b h1{
         margin: 0;
-        padding: 0 20px 0 20px;
+        padding: 20px 20px 0 20px;
         font-size: 7vw;
+        font-weight: 900;
     }
     .flex-cont-b h2{
         margin: 40px 0 0 0;
@@ -197,9 +210,9 @@ img{
 
     }
     .flex-cont-b ul li{
-        font-size: 5vw;
-        text-decoration:underline
-      
+        font-size: 6vw;
+        padding-bottom: 10px;
+        text-decoration:underline;
     }
     .signup{
        padding: 0 0px 0 0px;
@@ -209,6 +222,24 @@ img{
         padding: 0 20px 0 20px;
         font-size: 5vw;
     }
-   
-   
+
+    .l{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .email input{
+        width: 50%;
+        margin-top: 10px;
+    }
+    .email label {
+        width: 50%;
+    }
+    .email button{
+        width: 20%;
+        transform: translateX(50%);
+        margin-top: 10px;
+    }
+
 }
