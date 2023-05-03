@@ -220,7 +220,7 @@ img{
     }
     .signup h1{
         padding: 0 20px 0 20px;
-        
+
         font-size: 5vw;
     }
 
@@ -241,6 +241,9 @@ img{
         width: 20%;
         transform: translateX(50%);
         margin-top: 10px;
+    }
+    header button{
+        margin-right: 0;
     }
 
 }
